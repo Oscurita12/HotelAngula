@@ -18,6 +18,23 @@
     <app-descripcion></app-descripcion>
 </div>
 
+<section>
+    <div class="container mt-5" id="habitaciones">
+    <h2 class="text-center">HABITACIONES</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col" *ngFor="let habitacion of habitaciones">
+                <div class="card h-100 shadow">
+                    <img src={{habitacion.fotografias[0]}} alt="foto" class="img-fluid w-100 h-100">
+                    <h3 class="text-center fw-bold">{{habitacion.nombre}}</h3>
+                    <p class="text-center"><strong>Descripción:</strong> {{habitacion.descripcion}}</p>
+                    <p class="text-center"><strong>Peronas:</strong> {{habitacion.numeroMaximoPersonas}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <div>
     <app-footer></app-footer>
 </div>

@@ -14,7 +14,7 @@ export class HomeComponent {
     servicioHabitacion.consultarHabitaciones()
     .subscribe(respuesta=>{
       console.log(respuesta)
-      this.habitaciones=respuesta
+      this.habitaciones=respuesta.datos
     })
   }
 
